@@ -3,8 +3,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 16rem;
-  padding-bottom: 16rem;
+  padding-top: 19.2rem;
+  padding-bottom: 19.2rem;
 
   &__container {
     margin: 0 auto;
@@ -32,6 +32,7 @@
     font-size: 2rem;
     border-radius: 3px;
     border: 1px solid transparent;
+    outline: none;
     margin-right: 1rem;
     flex: 1;
   }
