@@ -25,6 +25,7 @@ html {
 
 body {
   box-sizing: border-box;
+  color: $color-black-primary;
 }
 
 ul {
@@ -33,6 +34,8 @@ ul {
 
 .container {
   width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 114rem;
 
   @include respond(tab-land) {
@@ -55,6 +58,7 @@ ul {
   border: 1px solid transparent;
   transition: all 0.2s;
   cursor: pointer;
+  transition: all 0.2s ease-in;
 }
 
 input {
