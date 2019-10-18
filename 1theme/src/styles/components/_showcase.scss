@@ -1,0 +1,36 @@
+.showcase {
+  width: 100%;
+  margin-bottom: 12rem;
+}
+
+.showcase-item {
+  display: flex;
+}
+
+.showcase-item-text {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 75%;
+  }
+
+  &__header {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+  }
+
+  &__desc {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+  }
+}
+
+.showcase-item-img {
+  flex-basis: 50%;
+  min-height: 48rem;
+}
