@@ -43,3 +43,15 @@ ul {
     width: 90%;
   }
 }
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.6rem;
+  color: #fff;
+  background-color: $color-blue-primary;
+  font-family: inherit;
+  font-size: 1.6rem;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
