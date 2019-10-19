@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
+import { Link } from "react-scroll";
 
-const Header = () => {
+const Header = ({ active }) => {
+  const items = ["services", "portfolio", "about", "team", "contact"];
+
   useEffect(() => {
     window.addEventListener("scroll", resizeHeaderOnScroll);
 
@@ -27,11 +30,36 @@ const Header = () => {
         <div className="header-container">
           <h1 className="header__title">Start Bootstrap</h1>
           <ul className="header-items">
-            <li className="header-items__item">services</li>
+            {items.map(item => {
+              if (active === item) {
+                return (
+                  <Link
+                    to={item}
+                    smooth={true}
+                    key={item}
+                    className="header-items__item header-items__item--active"
+                  >
+                    {item}
+                  </Link>
+                );
+              } else {
+                return (
+                  <Link
+                    to={item}
+                    smooth={true}
+                    key={item}
+                    className="header-items__item"
+                  >
+                    {item}
+                  </Link>
+                );
+              }
+            })}
+            {/* <li className="header-items__item">services</li>
             <li className="header-items__item">portfolio</li>
             <li className="header-items__item">about</li>
             <li className="header-items__item">team</li>
-            <li className="header-items__item">contact</li>
+            <li className="header-items__item">contact</li> */}
           </ul>
         </div>
       </div>

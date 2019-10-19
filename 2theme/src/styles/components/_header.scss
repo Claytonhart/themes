@@ -3,6 +3,7 @@
   width: 100%;
   transition: all 0.3s;
   padding: 2.5rem;
+  z-index: 10;
 
   &__title {
     color: $color-yellow;
@@ -44,5 +45,9 @@
     letter-spacing: 1px;
     cursor: pointer;
     line-height: 1.5;
+
+    &--active {
+      color: $color-yellow;
+    }
   }
 }

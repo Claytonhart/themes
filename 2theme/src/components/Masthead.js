@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Masthead = () => {
   return (
@@ -7,9 +8,15 @@ const Masthead = () => {
         <div className="masthead-content">
           <div className="masthead-content__title">Welcome to our studio!</div>
           <div className="masthead-content__header">It's nice to meet you</div>
-          <a href="#services" className="masthead-content__btn btn">
+          <Link
+            to="services"
+            smooth={true}
+            duration={500}
+            offset={-54}
+            className="masthead-content__btn btn"
+          >
             Tell me more
-          </a>
+          </Link>
         </div>
       </div>
     </section>
