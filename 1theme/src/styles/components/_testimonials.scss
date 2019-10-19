@@ -11,11 +11,22 @@
 
   &__container {
     display: flex;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 }
 
 .testimonial {
   flex-basis: 33.3333333333333%;
+
+  @include respond(tab-port) {
+    &:not(:last-of-type) {
+      margin-bottom: 2.5rem;
+    }
+  }
+
   &__img {
     width: 19.2rem;
     height: 19.2rem;

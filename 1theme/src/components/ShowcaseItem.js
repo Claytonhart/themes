@@ -8,12 +8,6 @@ const ShowcaseItem = ({ order = 1, index, title, desc, img }) => {
 
   return (
     <div className="showcase-item">
-      <div className="showcase-item-text">
-        <div className="showcase-item-text__container">
-          <h3 className="showcase-item-text__header">{title}</h3>
-          <p className="showcase-item-text__desc">{desc}</p>
-        </div>
-      </div>
       <div
         className="showcase-item-img"
         style={{
@@ -22,6 +16,12 @@ const ShowcaseItem = ({ order = 1, index, title, desc, img }) => {
           backgroundSize: "cover"
         }}
       ></div>
+      <div className="showcase-item-text">
+        <div className="showcase-item-text__container">
+          <h3 className="showcase-item-text__header">{title}</h3>
+          <p className="showcase-item-text__desc">{desc}</p>
+        </div>
+      </div>
     </div>
   );
 };

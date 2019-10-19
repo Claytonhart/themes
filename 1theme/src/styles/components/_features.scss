@@ -6,6 +6,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -14,6 +18,12 @@
   flex-direction: column;
   text-align: center;
   flex-basis: 33.3333333333333333333333%;
+
+  @include respond(tab-port) {
+    &:not(:last-of-type) {
+      margin-bottom: 2.5rem;
+    }
+  }
 
   &__img {
     font-size: 8rem;

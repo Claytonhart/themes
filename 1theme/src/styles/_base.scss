@@ -33,7 +33,7 @@ ul {
 }
 
 .container {
-  width: 70%;
+  // width: 70%;
   margin-left: auto;
   margin-right: auto;
   max-width: 114rem;
@@ -55,10 +55,11 @@ ul {
   font-family: inherit;
   font-size: 1.6rem;
   border-radius: 3px;
-  border: 1px solid transparent;
+  border: 1px solid $color-blue-primary;
   transition: all 0.2s;
   cursor: pointer;
   transition: all 0.2s ease-in;
+  outline: none;
 }
 
 input {

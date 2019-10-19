@@ -4,6 +4,10 @@
 
 .showcase-item {
   display: flex;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .showcase-item-text {
@@ -11,6 +15,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include respond(tab-port) {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
 
   &__container {
     width: 75%;
@@ -32,4 +41,8 @@
 .showcase-item-img {
   flex-basis: 50%;
   min-height: 48rem;
+
+  @include respond(tab-port) {
+    order: -1 !important;
+  }
 }
