@@ -11,11 +11,11 @@
 
   &__container {
     display: flex;
-    justify-content: space-around;
   }
 }
 
 .testimonial {
+  flex-basis: 33.3333333333333%;
   &__img {
     width: 19.2rem;
     height: 19.2rem;
