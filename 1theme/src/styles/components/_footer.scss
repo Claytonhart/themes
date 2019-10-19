@@ -1,0 +1,42 @@
+.footer {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-left {
+  &__desc {
+    color: $color-grey-muted;
+    font-size: 1.3rem;
+  }
+}
+
+.footer-about {
+  display: flex;
+  margin-bottom: 1.4rem;
+
+  &__item {
+    color: $color-blue-primary;
+    font-size: 1.6rem;
+
+    &:not(:last-of-type) {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.footer-right {
+  &__images {
+    display: flex;
+    justify-content: space-between;
+
+    i {
+      color: $color-blue-primary;
+      font-size: 3.2rem;
+      padding: 1rem;
+    }
+  }
+}
