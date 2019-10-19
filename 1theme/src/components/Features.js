@@ -2,7 +2,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features bg-light">
       <div className="container">
         <div className="features-item">
           <i className="far fa-folder features-item__img"></i>

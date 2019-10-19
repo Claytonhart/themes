@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Masthead from "./components/Masthead";
 import Features from "./components/Features";
 import Showcase from "./components/Showcase";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Masthead />
       <Features />
       <Showcase />
+      <Testimonials />
     </div>
   );
 }

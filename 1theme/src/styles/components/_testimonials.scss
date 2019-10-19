@@ -1,0 +1,38 @@
+.testimonials {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  text-align: center;
+
+  &__header {
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.testimonial {
+  &__img {
+    width: 19.2rem;
+    height: 19.2rem;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px 0 #adb5bd;
+    margin-bottom: 1.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__desc {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+}
