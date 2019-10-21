@@ -38,6 +38,7 @@ const Header = ({ active }) => {
                     smooth={true}
                     key={item}
                     className="header-items__item header-items__item--active"
+                    offset={-54}
                   >
                     {item}
                   </Link>
@@ -49,6 +50,7 @@ const Header = ({ active }) => {
                     smooth={true}
                     key={item}
                     className="header-items__item"
+                    offset={-54}
                   >
                     {item}
                   </Link>

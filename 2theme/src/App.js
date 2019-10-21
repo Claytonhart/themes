@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Masthead from "./components/Masthead";
 import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   const [active, setActive] = useState(null);
@@ -18,7 +19,6 @@ function App() {
     // let scrollPosY = window.pageYOffset | document.body.scrollTop;
     // const sections = [services, portfolio, about, team, contact];
     let headerHeight = document.getElementById("header").clientHeight;
-    console.log("header: " + headerHeight);
 
     let servicesPos = document
       .getElementById("services")
@@ -29,8 +29,6 @@ function App() {
     } else {
       setActive(null);
     }
-    // console.log(scrollPosY);
-    console.log(servicesPos);
   };
 
   return (
@@ -38,6 +36,7 @@ function App() {
       <Header active={active} />
       <Masthead />
       <Services />
+      <Portfolio />
     </div>
   );
 }
