@@ -4,6 +4,7 @@ import Masthead from "./components/Masthead";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
 import About from "./components/About";
+import Team from "./components/Team";
 
 function App() {
   const [active, setActive] = useState(null);
@@ -28,8 +29,11 @@ function App() {
       .getElementById("portfolio")
       .getBoundingClientRect().top;
     let aboutPos = document.getElementById("about").getBoundingClientRect().top;
+    let teamPos = document.getElementById("team").getBoundingClientRect().top;
 
-    if (aboutPos <= headerHeight) {
+    if (teamPos <= headerHeight) {
+      setActive("team");
+    } else if (aboutPos <= headerHeight) {
       setActive("about");
     } else if (portfolioPos <= headerHeight) {
       setActive("portfolio");
@@ -47,6 +51,7 @@ function App() {
       <Services />
       <Portfolio />
       <About />
+      <Team />
     </div>
   );
 }
