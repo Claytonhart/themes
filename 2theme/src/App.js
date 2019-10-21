@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Team from "./components/Team";
 import Brands from "./components/Brands";
+import Contact from "./components/Contact";
 
 function App() {
   const [active, setActive] = useState(null);
@@ -54,6 +55,7 @@ function App() {
       <About />
       <Team />
       <Brands />
+      <Contact />
     </div>
   );
 }
