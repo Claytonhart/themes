@@ -50,7 +50,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <section className="portfolio">
+    <section className="portfolio" id="portfolio">
       <div className="container">
         <div className="portfolio-desc">
           <h2 className="portfolio-desc__header">Portfolio</h2>
