@@ -3,7 +3,11 @@ import bgImg from "../images/map-image.png";
 
 const Contact = () => {
   return (
-    <section className="contact" style={{ backgroundImage: `url(${bgImg})` }}>
+    <section
+      className="contact"
+      id="contact"
+      style={{ backgroundImage: `url(${bgImg})` }}
+    >
       <div className="container">
         <div className="contact-header">
           <h3 className="contact-header__header">Contact us</h3>

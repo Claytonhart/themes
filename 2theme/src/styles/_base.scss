@@ -25,7 +25,6 @@ html {
 
 body {
   box-sizing: border-box;
-  height: 500vh;
 }
 
 ul {
@@ -51,15 +50,26 @@ ul {
 
 .btn {
   display: inline-block;
-  padding: 0.8rem 1.6rem;
   color: #fff;
   font-family: inherit;
-  font-size: 1.6rem;
   border-radius: 3px;
   transition: all 0.2s;
   cursor: pointer;
   transition: all 0.2s ease-in;
   outline: none;
+  background-color: $color-yellow;
+  border: 1px solid $color-yellow;
+  text-decoration: none;
+  padding: 2rem 4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #fec810;
+    border-color: #fec810;
+  }
 }
 
 input {
