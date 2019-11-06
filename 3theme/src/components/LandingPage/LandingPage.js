@@ -1,17 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
-const Container = styled.div`
-  display: flex;
-  align-items: center;
-`;
-
-const Content = styled.div`
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  max-width: 1000px;
-`;
+import withPageWrapper from '../Layout/withPageWrapper';
 
 const Header = styled.h1`
   text-transform: uppercase;
@@ -70,43 +59,41 @@ const SocialLink = styled.a`
 
 const LandingPage = () => {
   return (
-    <Container>
-      <Content>
-        <div>
-          <Header>
-            Clarence <span>Taylor</span>
-          </Header>
-          <Info>
-            3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468 ·{' '}
-            <span>NAME@EMAIL.COM</span>
-          </Info>
-        </div>
-        <Description>
-          I am experienced in leveraging agile frameworks to provide a robust
-          synopsis for high level overviews. Iterative approaches to corporate
-          strategy foster collaborative thinking to further the overall value
-          proposition.
-        </Description>
-        <SocialLinks>
-          <SocialLink href='#!'>
-            <i className='fab fa-linkedin-in'></i>
-          </SocialLink>
+    <>
+      <div>
+        <Header>
+          Clarence <span>Taylor</span>
+        </Header>
+        <Info>
+          3542 BERRY STREET · CHEYENNE WELLS, CO 80810 · (317) 585-8468 ·{' '}
+          <span>NAME@EMAIL.COM</span>
+        </Info>
+      </div>
+      <Description>
+        I am experienced in leveraging agile frameworks to provide a robust
+        synopsis for high level overviews. Iterative approaches to corporate
+        strategy foster collaborative thinking to further the overall value
+        proposition.
+      </Description>
+      <SocialLinks>
+        <SocialLink href='#!'>
+          <i className='fab fa-linkedin-in'></i>
+        </SocialLink>
 
-          <SocialLink href='#!'>
-            <i className='fab fa-github'></i>
-          </SocialLink>
+        <SocialLink href='#!'>
+          <i className='fab fa-github'></i>
+        </SocialLink>
 
-          <SocialLink href='#!'>
-            <i className='fab fa-twitter'></i>
-          </SocialLink>
+        <SocialLink href='#!'>
+          <i className='fab fa-twitter'></i>
+        </SocialLink>
 
-          <SocialLink href='#!'>
-            <i className='fab fa-facebook-f'></i>
-          </SocialLink>
-        </SocialLinks>
-      </Content>
-    </Container>
+        <SocialLink href='#!'>
+          <i className='fab fa-facebook-f'></i>
+        </SocialLink>
+      </SocialLinks>
+    </>
   );
 };
 
-export default LandingPage;
+export default withPageWrapper(LandingPage);

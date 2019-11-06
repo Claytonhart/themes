@@ -13,14 +13,14 @@ const Content = styled.div`
   max-width: 1000px;
 `;
 
-const PageWrapper = Component => {
+const withPageLayout = Component => props => {
   return (
     <Container>
       <Content>
-        <Component></Component>
+        <Component {...props} />
       </Content>
     </Container>
   );
 };
 
-export default PageWrapper;
+export default withPageLayout;

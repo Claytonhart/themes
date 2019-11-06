@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 
-import PageWrapper from '../Layout/PageWrapper';
+import withPageWrapper from '../Layout/withPageWrapper';
 
 const Skills = () => {
   return (
@@ -12,4 +12,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default withPageWrapper(Skills);

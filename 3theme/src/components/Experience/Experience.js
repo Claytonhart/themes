@@ -1,13 +1,6 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-
-const Container = styled.div`
-  padding: 30px;
-  border-top: 1px solid ${props => props.theme.primary.lightgrey};
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+import withPageLayout from '../Layout/withPageWrapper';
 
 const Header = styled.h2`
   color: ${props => props.theme.primary.grey};
@@ -56,7 +49,7 @@ const ExperienceTimes = styled.div`
 
 const Experience = () => {
   return (
-    <Container>
+    <>
       <Header>Experience</Header>
       <Content>
         <ExperienceItem></ExperienceItem>
@@ -64,7 +57,7 @@ const Experience = () => {
         <ExperienceItem></ExperienceItem>
         <ExperienceItem></ExperienceItem>
       </Content>
-    </Container>
+    </>
   );
 };
 
@@ -87,4 +80,4 @@ const ExperienceItem = () => (
   </ExperienceItemContainer>
 );
 
-export default Experience;
+export default withPageLayout(Experience);
